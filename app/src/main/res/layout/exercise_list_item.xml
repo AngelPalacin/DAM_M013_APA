@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:clickable="false" />
+
+    <ImageView
+        android:id="@+id/imageViewSaltar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/saltar" />
+
+    <ImageView
+        android:id="@+id/imageViewCorrer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/correr" />
+    <ImageView
+        android:id="@+id/imageremo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/remo" />
+    <ImageView
+        android:id="@+id/imageViewMMA"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/mma" />
+    <ImageView
+        android:id="@+id/imageViewNatacion"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/natacion" />
+    <ImageView
+        android:id="@+id/imageViewEliptica"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/eliptica" />
+
+    <ImageView
+        android:id="@+id/imageViewEscaleras"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/escaleras" />
+    <ImageView
+        android:id="@+id/imageViewComba"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/comba" />
+    <ImageView
+        android:id="@+id/imageViewBicicleta"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/bici" />
+
+    <ImageView
+        android:id="@+id/imageViewPiernas"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/piernas" />
+    <ImageView
+        android:id="@+id/imageViewAbdominales"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/abdominales" />
+    <ImageView
+        android:id="@+id/imageViewEspalda"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/espalda" />
+    <ImageView
+        android:id="@+id/imageViewBiceps"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/biceps" />
+    <ImageView
+        android:id="@+id/imageViewHombros"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/hombros" />
+
+    <TextView
+        android:id="@+id/exerciseDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="hola hola"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>

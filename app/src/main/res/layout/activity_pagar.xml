@@ -1,0 +1,51 @@
+<!-- activity_pagar.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCartSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvCartItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCartSummary"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvCartItems"
+        android:layout_marginTop="16dp"
+        android:text="Total:0.00€"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCompletePurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTotalAmount"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Completar compra"
+        android:onClick="onCompletePurchaseClick" />
+    <!-- activity_pagar.xml -->
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvCartItems"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Eliminar" />
+
+
+</RelativeLayout>

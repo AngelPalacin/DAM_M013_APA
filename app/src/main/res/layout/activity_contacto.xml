@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Imagen de fondo con nivel de opacidad -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
+        android:alpha="0.8" />
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Aqui el link a nuestras redes sociales:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="178dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/textViewHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Instagram"
+        android:src="@drawable/insta"
+        android:onClick="openInstagramLink" />
+
+    <!-- El resto del diseño se mantiene igual -->
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="139dp"
+        android:layout_height="92dp"
+        android:layout_below="@id/insta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Twitter"
+        android:onClick="openTwitterLink"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="132dp"
+        android:layout_height="83dp"
+        android:layout_below="@id/twitter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Facebook"
+        android:onClick="openFacebookLink"
+        android:src="@drawable/facebook" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="onCallButtonClick"
+        android:text="Llamar"
+        android:textColor="#FFFFFF" /> <!-- Color blanco -->
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ListView para mostrar y seleccionar ejercicios -->
+    <ListView
+        android:id="@+id/exercisesListView"
+        android:layout_width="359dp"
+        android:layout_height="511dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/exercisesListView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="guardarEjercicios" />
+
+</RelativeLayout>

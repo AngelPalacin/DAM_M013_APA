@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003796"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="Nombre"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F3EFEF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editNumeroCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Número de Cuenta"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNumeroCuenta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="DNI"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDNI"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Apellidos"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editApellidos"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Dirección"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDireccion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Teléfono"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelefono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Correo"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F4F0F0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/botonEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCorreo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Editar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/botonVolverMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botonEditar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Volver al Menú"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</ScrollView>

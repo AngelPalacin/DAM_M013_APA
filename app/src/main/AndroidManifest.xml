@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="Gym A.P.A"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.Anuncios"
+            android:exported="false" />
+        <!-- Actividades -->
+        <activity
+            android:name=".activities.imc_guardado"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.salud"
+            android:exported="false" />
+        <activity
+            android:name=".activities.tienda"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_juego"
+            android:exported="false" />
+        <activity android:name=".activities.pagar" /> <!-- Otras actividades -->
+        <activity
+            android:name=".activities.contacto"
+            android:exported="false" />
+        <activity
+            android:name=".activities.configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".activities.sugerencias"
+            android:exported="false" />
+        <activity
+            android:name=".activities.fuerza"
+            android:exported="false" />
+        <activity
+            android:name=".activities.midia"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.RecordAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.calendario"
+            android:exported="false" />
+        <activity
+            android:name=".activities.cardio"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Rutinas"
+            android:exported="false" />
+        <activity
+            android:name=".activities.banco"
+            android:exported="false" />
+        <activity
+            android:name=".activities.registro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.salud"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".activities.Inicio"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Dieta"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MusicPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.gym"
+            android:exported="false" />
+    </application>
+
+</manifest>

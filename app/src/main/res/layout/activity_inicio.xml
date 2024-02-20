@@ -1,0 +1,198 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:layout_width="755dp"
+        android:layout_height="750dp"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+
+    <!-- Botón Música -->
+    <ImageView
+        android:id="@+id/startButton"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/music" />
+
+    <!-- Botón Juego justo debajo de Música -->
+    <Button
+        android:id="@+id/btnJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="Juego" />
+
+    <!-- Imagen en lugar del botón de Dieta -->
+    <ImageView
+        android:id="@+id/dietasImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnJuego"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="onDietaImageClick"
+        android:src="@drawable/dieta_image" />
+
+    <!-- Menú desplegable -->
+    <!-- Color azul, puedes cambiar el código de color según tus preferencias -->
+
+
+    <!-- Imagen en lugar del botón de Rutinas -->
+    <Spinner
+        android:id="@+id/dropdownMenu"
+        android:layout_width="117dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/dietasImageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-203dp"
+        android:background="#F5F7FA"
+        android:spinnerMode="dropdown"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/rutinasImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dietasImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/rutina"
+        android:onClick="onRutinasImageClick" />
+
+    <!-- Botón para abrir la actividad midia -->
+    <ImageView
+        android:id="@+id/verMidiaButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rutinasImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/hoy"
+        android:onClick="startMidiaActivity" />
+
+    <!-- Botón para ver registros -->
+    <ImageView
+        android:id="@+id/verRegistrosButton"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/verMidiaButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/calendar"
+        android:layout_marginTop="40dp" />
+
+    <!-- Botón Tienda debajo de Ver Registros y centrado horizontalmente -->
+    <ImageView
+        android:id="@+id/tienda"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/verRegistrosButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/shop"/>
+
+    <!-- Botón Salud debajo de Tienda y centrado horizontalmente -->
+    <ImageView
+        android:id="@+id/saludButton"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tienda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/salud"
+        android:onClick="onClickSaludButton" />
+
+    <!-- Texto para Música -->
+    <TextView
+        android:id="@+id/textViewMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Música" />
+
+    <!-- Texto para Dieta -->
+    <TextView
+        android:id="@+id/textViewDieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dietasImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Dieta" />
+
+    <!-- Texto para Rutinas -->
+    <TextView
+        android:id="@+id/textViewRutinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rutinasImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Rutinas" />
+
+    <!-- Texto para Mi día -->
+    <TextView
+        android:id="@+id/textViewMiDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verMidiaButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Mi día" />
+
+    <!-- Texto para Registro -->
+    <TextView
+        android:id="@+id/textViewRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verRegistrosButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Registro" />
+
+    <!-- Texto para Tienda -->
+    <TextView
+        android:id="@+id/textViewTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tienda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Tienda" />
+
+    <!-- Texto para Salud -->
+    <TextView
+        android:id="@+id/textViewSalud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saludButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Salud" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/saludButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Atras" />
+
+
+</RelativeLayout>
+</ScrollView>

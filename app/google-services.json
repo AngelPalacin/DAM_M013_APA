@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580268720977",
+    "project_id": "gym-angel-7a5a4",
+    "storage_bucket": "gym-angel-7a5a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580268720977:android:bcb1d7d994ce46bb9b8970",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsH5L3U1pDWP18BrP2yWiWh6umefa0YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
