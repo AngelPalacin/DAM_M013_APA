@@ -82,11 +82,7 @@ public class pagar extends AppCompatActivity {
     }
 
     private void removeItems() {
-        // Lógica para eliminar productos del carrito
-        // Aquí puedes implementar la lógica para eliminar elementos del carrito
-        // Por ejemplo, puedes utilizar un cuadro de diálogo para que el usuario seleccione los productos a eliminar
-        // y luego actualizar la lista y el precio total
-        // Por ahora, eliminaré el primer elemento de la lista para demostrar el concepto.
+
         if (!cartList.isEmpty()) {
             cartList.remove(0);
             // Actualizar la lista y el precio total

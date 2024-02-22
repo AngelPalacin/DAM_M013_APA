@@ -1,4 +1,3 @@
-// tienda.java
 package com.example.myapplication.activities;
 
 import android.content.Intent;

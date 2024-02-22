@@ -2,9 +2,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Imagen Cardio -->
-
-    <!-- Texto para Cardio -->
     <ImageView
         android:id="@+id/cardioButton"
         android:layout_width="450dp"
@@ -24,9 +21,6 @@
         android:textStyle="bold" />
 
 
-    <!-- Imagen Fuerza -->
-
-    <!-- Texto para Fuerza -->
 
     <ImageView
         android:id="@+id/fuerzaButton"
@@ -46,6 +40,5 @@
         android:textStyle="bold"
         android:text="Fuerza" />
 
-    <!-- Otros elementos o diseño según sea necesario -->
 
 </RelativeLayout>

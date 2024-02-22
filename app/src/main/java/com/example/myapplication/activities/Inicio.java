@@ -133,7 +133,7 @@ public class Inicio extends AppCompatActivity {
                 startActivity(gymIntent);
             }
         });
-// ... (tu código existente)
+
 
 // Obtener referencia al botón "salud" en el layout
         ImageView saludButton = findViewById(R.id.saludButton);
@@ -148,7 +148,7 @@ public class Inicio extends AppCompatActivity {
             }
         });
 
-// ... (tu código existente)
+
 
         // Obtener referencia al botón Ver Registros en el layout
        ImageView verRegistrosButton = findViewById(R.id.verRegistrosButton);

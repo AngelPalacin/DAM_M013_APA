@@ -53,9 +53,6 @@ public class imc_guardado extends AppCompatActivity {
         listViewHistorial.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Aquí puedes implementar la lógica para manejar la selección de elementos
-                // Por ejemplo, puedes resaltar el elemento seleccionado o realizar alguna acción específica
-                // Puedes acceder al elemento seleccionado mediante historialList.get(position)
             }
         });
     }

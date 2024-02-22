@@ -33,7 +33,6 @@ public class Anuncios extends AppCompatActivity {
 
     private List<Anuncio> obtenerAnuncios() {
         // Implementa la lógica para obtener tus anuncios desde tu fuente de datos
-        // Puedes utilizar una lista estática como ejemplo
         List<Anuncio> anuncios = new ArrayList<>();
         anuncios.add(new Anuncio("Periodo de vacaciones en Agosto", "El gimnasio estará cerrado del 1 al 15 de agosto."));
         anuncios.add(new Anuncio("Tareas de mantenimiento de máquinas", "Del 20 al 25 de agosto realizaremos tareas de mantenimiento en nuestras máquinas."));

@@ -6,7 +6,6 @@
     android:padding="16dp"
     tools:context=".activities.RecordsActivity">
 
-    <!-- Asegúrate de tener este ListView con el id recordsListView -->
     <ListView
         android:id="@+id/recordsListView"
         android:layout_width="match_parent"

@@ -46,8 +46,6 @@
         android:onClick="onDietaImageClick"
         android:src="@drawable/dieta_image" />
 
-    <!-- Menú desplegable -->
-    <!-- Color azul, puedes cambiar el código de color según tus preferencias -->
 
 
     <!-- Imagen en lugar del botón de Rutinas -->

@@ -27,7 +27,6 @@
                 android:text="Femenino" />
         </RadioGroup>
 
-        <!-- Cambia el tipo de entrada del campo de altura a "number" -->
         <EditText
             android:id="@+id/editTextAltura"
             android:layout_width="match_parent"
